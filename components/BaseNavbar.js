@@ -20,10 +20,6 @@ const BaseNavbar = () => {
       name: 'Contact',
       url: 'contact',
     },
-    {
-      name: 'About',
-      url: 'about',
-    },
   ];
 
   return (
@@ -73,8 +69,9 @@ const BaseNavbar = () => {
 
         {/* If open nav or not */}
         <div
-          className={`w-full flex justify-center h-full ${isOpen ? 'block' : 'hidden'
-            }`}
+          className={`w-full flex justify-center h-full ${
+            isOpen ? 'block' : 'hidden'
+          }`}
         >
           <ul className="flex flex-col gap-8 uppercase text-lg font-semibold items-center justify-center text-white pb-6">
             <a
@@ -110,15 +107,6 @@ const BaseNavbar = () => {
             >
               <Link to="contact" smooth={true} duration={250}>
                 Contact
-              </Link>
-            </a>
-
-            <a
-              className="cursor-pointer active:text-gray-500"
-              onClick={() => setOpen(!isOpen)}
-            >
-              <Link to="about" smooth={true} duration={250}>
-                About
               </Link>
             </a>
           </ul>

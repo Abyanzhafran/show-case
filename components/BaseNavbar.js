@@ -17,6 +17,10 @@ const BaseNavbar = () => {
       url: 'pricing',
     },
     {
+      name: 'About',
+      url: 'about',
+    },
+    {
       name: 'Contact',
       url: 'contact',
     },
@@ -98,6 +102,15 @@ const BaseNavbar = () => {
             >
               <Link to="pricing" smooth={true} duration={250}>
                 Pricing
+              </Link>
+            </a>
+
+            <a
+              className="cursor-pointer active:text-gray-500"
+              onClick={() => setOpen(!isOpen)}
+            >
+              <Link to="about" smooth={true} duration={250}>
+                About
               </Link>
             </a>
 

@@ -149,6 +149,34 @@ const Homepage = () => {
           </div>
         </section>
         <section
+          id="about"
+          className="my-8 h-full"
+        >
+          <div className="py-16 px-8 flex flex-col items-center bg-gray-300">
+            <div className="mb-8">
+              <span className="font-semibold text-4xl">About</span>
+              <hr className="border-blue-500 border-2 w-full mt-3 mb-3" />
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-8">
+              {aboutItem.map((i) => (
+                <div class="card text-center shadow-2xl bg-white">
+                  <div class="px-10 pt-10">
+                    <img src={i.img} class="rounded-xl" />
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title">{i.name}</h2>
+                    <span className="text-lg font-semibold">{i.nim}</span>
+                    <span className="text-lg font-semibold">{i.kelas}</span>
+                    <div class="justify-center card-actions">
+                      <button class="btn btn-outline btn-accent">More info</button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section
           id="contact"
           className="flex flex-col items-center justify-center py-8 h-full mb-8"
         >

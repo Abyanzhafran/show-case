@@ -1,5 +1,6 @@
 import MainLayout from '../components/MainLayout';
 import Card from '../components/Card';
+import Head from 'next/head'
 import {
   BeakerIcon,
   ShareIcon,
@@ -79,11 +80,16 @@ const Homepage = () => {
 
   return (
     <MainLayout>
+       <Head>
+        {/* <title>The page title</title> */}
+        <meta name="google-site-verification" content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI" />
+       </Head>
       <main className="w-full">
         <section
           id="home"
           className="flex flex-col items-center justify-center py-8 h-full"
         >
+          <meta name="google-site-verification" content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI" />
           <div className="flex flex-wrap justify-center mt-28 gap-8">
             <div className="w-64 flex flex-col gap-6">
               <span className="text-5xl font-bold">ShowCase</span>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+   <!-- other tags -->
+   <entry>
+     <!-- <link href="http://example.com/mypage" /> -->
+     <link href="http://show-case.xyz" />
+     <updated>2011-06-27T19:34:00+01:00</updated>
+     <!-- other tags -->
+   </entry>
+   <entry>
+     ...
+   </entry>
+  </feed>

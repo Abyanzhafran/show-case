@@ -36,31 +36,37 @@ const Homepage = () => {
       icon: <BeakerIcon className="h-14 w-14 text-blue-500" />,
       title: 'page builder',
       caption: 'Build your page easily',
+      url: '/pageBuilder',
     },
     {
       icon: <PencilAltIcon className="h-14 w-14 text-blue-500" />,
       title: 'customized domain',
       caption: 'Create your beautiful domain',
+      url: '/customizeDomain',
     },
     {
       icon: <ClipboardListIcon className="h-14 w-14 text-blue-500" />,
       title: 'simple main board',
       caption: 'Make your own page with very simple main board',
+      url: '/simpleMainBoard',
     },
     {
       icon: <CashIcon className="h-14 w-14 text-blue-500" />,
       title: 'handle your transaction payment',
       caption: 'You can handle and customize your own transaction easily',
+      url: '/transaction',
     },
     {
       icon: <CloudUploadIcon className="h-14 w-14 text-blue-500" />,
       title: 'easy publish page',
       caption: 'Easy to publish',
+      url: '/easyPublish',
     },
     {
       icon: <ShareIcon className="h-14 w-14 text-blue-500" />,
       title: 'share and collaborate',
       caption: 'Share it and collaborate with your friends',
+      url: '/share',
     },
   ];
   const aboutItem = [
@@ -122,7 +128,8 @@ const Homepage = () => {
               <div className="flex flex-wrap gap-8 justify-center">
                 {cardCompItem.map((item) => (
                   <Card
-                    className="w-64 sm:w-96 bg-white rounded-lg"
+                    className="w-64 sm:w-96 bg-white rounded-lg hover:bg-gray-200"
+                    onClick={() => (window.location.href = item.url)}
                     key={item.title}
                   >
                     <div className="flex flex-col items-center justify-center h-48 gap-3">
@@ -131,6 +138,11 @@ const Homepage = () => {
                         {item.title}
                       </span>
                       <p>{item.caption}</p>
+                      {/* <div className="justify-center card-actions">
+                        <button className="btn btn-outline btn-accent">
+                          Detail Feature
+                        </button>
+                      </div> */}
                     </div>
                   </Card>
                 ))}

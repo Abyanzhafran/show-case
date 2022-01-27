@@ -1,6 +1,6 @@
 import MainLayout from '../components/MainLayout';
 import Card from '../components/Card';
-import Head from 'next/head'
+import Head from 'next/head';
 import {
   BeakerIcon,
   ShareIcon,
@@ -80,16 +80,22 @@ const Homepage = () => {
 
   return (
     <MainLayout>
-       <Head>
+      <Head>
         {/* <title>The page title</title> */}
-        <meta name="google-site-verification" content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI" />
-       </Head>
+        <meta
+          name="google-site-verification"
+          content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI"
+        />
+      </Head>
       <main className="w-full">
         <section
           id="home"
           className="flex flex-col items-center justify-center py-8 h-full"
         >
-          <meta name="google-site-verification" content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI" />
+          <meta
+            name="google-site-verification"
+            content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI"
+          />
           <div className="flex flex-wrap justify-center mt-28 gap-8">
             <div className="w-64 flex flex-col gap-6">
               <span className="text-5xl font-bold">ShowCase</span>
@@ -115,7 +121,10 @@ const Homepage = () => {
               </div>
               <div className="flex flex-wrap gap-8 justify-center">
                 {cardCompItem.map((item) => (
-                  <Card className="w-64 sm:w-96 bg-white rounded-lg">
+                  <Card
+                    className="w-64 sm:w-96 bg-white rounded-lg"
+                    key={item.title}
+                  >
                     <div className="flex flex-col items-center justify-center h-48 gap-3">
                       {item.icon}
                       <span className="text-xl font-semibold capitalize">
@@ -154,10 +163,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-        <section
-          id="about"
-          className="my-8 h-full"
-        >
+        <section id="about" className="my-8 h-full">
           <div className="py-16 px-8 flex flex-col items-center bg-gray-300">
             <div className="mb-8">
               <span className="font-semibold text-4xl">About</span>
@@ -165,16 +171,18 @@ const Homepage = () => {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-8">
               {aboutItem.map((i) => (
-                <div class="card text-center shadow-2xl bg-white">
-                  <div class="px-10 pt-10">
-                    <img src={i.img} class="rounded-xl" />
+                <div className="card text-center shadow-2xl bg-white">
+                  <div className="px-10 pt-10">
+                    <img src={i.img} className="rounded-xl" />
                   </div>
-                  <div class="card-body">
-                    <h2 class="card-title">{i.name}</h2>
+                  <div className="card-body">
+                    <h2 className="card-title">{i.name}</h2>
                     <span className="text-lg font-semibold">{i.nim}</span>
                     <span className="text-lg font-semibold">{i.kelas}</span>
-                    <div class="justify-center card-actions">
-                      <button class="btn btn-outline btn-accent">More info</button>
+                    <div className="justify-center card-actions">
+                      <button className="btn btn-outline btn-accent">
+                        More info
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -190,28 +198,28 @@ const Homepage = () => {
             <span className="text-4xl font-semibold font-mono">
               Get in Touch
             </span>
-            <div class="form-control">
+            <div className="form-control">
               <input
                 type="text"
                 placeholder="Your Name"
-                class="input input-bordered"
+                className="input input-bordered"
               />
             </div>
-            <div class="form-control">
+            <div className="form-control">
               <input
                 type="text"
                 placeholder="Your Email"
-                class="input input-bordered"
+                className="input input-bordered"
               />
             </div>
-            <div class="form-control">
+            <div className="form-control">
               <textarea
-                class="textarea h-24 textarea-bordered"
+                className="textarea h-24 textarea-bordered"
                 placeholder="Send Message"
               ></textarea>
             </div>
             <div className="w-56">
-              <button class="btn btn-primary">Send Message</button>
+              <button className="btn btn-primary">Send Message</button>
             </div>
           </div>
         </section>

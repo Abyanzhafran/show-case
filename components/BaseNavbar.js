@@ -40,7 +40,10 @@ const BaseNavbar = () => {
           <div className="flex-none hidden lg:flex">
             <div className="flex">
               {navItem.map((item) => (
-                <li className="btn btn-ghost btn-sm rounded-btn normal-case text-base">
+                <li
+                  className="btn btn-ghost btn-sm rounded-btn normal-case text-base"
+                  key={item.name}
+                >
                   <Link to={item.url} smooth={true} duration={250}>
                     {item.name}
                   </Link>
@@ -78,50 +81,50 @@ const BaseNavbar = () => {
           }`}
         >
           <ul className="flex flex-col gap-8 uppercase text-lg font-semibold items-center justify-center text-white pb-6">
-            <a
-              className="cursor-pointer active:text-gray-500"
+            <Link
+              to="home"
+              smooth={true}
+              duration={250}
               onClick={() => setOpen(!isOpen)}
             >
-              <Link to="home" smooth={true} duration={250}>
-                Home
-              </Link>
-            </a>
+              <a className="cursor-pointer active:text-gray-500">Home</a>
+            </Link>
 
-            <a
-              className="cursor-pointer active:text-gray-500"
+            <Link
+              to="features"
+              smooth={true}
+              duration={250}
               onClick={() => setOpen(!isOpen)}
             >
-              <Link to="features" smooth={true} duration={250}>
-                Features
-              </Link>
-            </a>
+              <a className="cursor-pointer active:text-gray-500">Features</a>
+            </Link>
 
-            <a
-              className="cursor-pointer active:text-gray-500"
+            <Link
+              to="pricing"
+              smooth={true}
+              duration={250}
               onClick={() => setOpen(!isOpen)}
             >
-              <Link to="pricing" smooth={true} duration={250}>
-                Pricing
-              </Link>
-            </a>
+              <a className="cursor-pointer active:text-gray-500">Pricing</a>
+            </Link>
 
-            <a
-              className="cursor-pointer active:text-gray-500"
+            <Link
+              to="about"
+              smooth={true}
+              duration={250}
               onClick={() => setOpen(!isOpen)}
             >
-              <Link to="about" smooth={true} duration={250}>
-                About
-              </Link>
-            </a>
+              <a className="cursor-pointer active:text-gray-500">About</a>
+            </Link>
 
-            <a
-              className="cursor-pointer active:text-gray-500"
+            <Link
+              to="contact"
+              smooth={true}
+              duration={250}
               onClick={() => setOpen(!isOpen)}
             >
-              <Link to="contact" smooth={true} duration={250}>
-                Contact
-              </Link>
-            </a>
+              <a className="cursor-pointer active:text-gray-500">Contact</a>
+            </Link>
           </ul>
         </div>
       </div>

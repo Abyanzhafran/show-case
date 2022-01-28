@@ -98,13 +98,9 @@ const Homepage = () => {
           id="home"
           className="flex flex-col items-center justify-center py-8 h-full"
         >
-          <meta
-            name="google-site-verification"
-            content="edcgayO-Pn_cLPPeIN2-lHU0UJzQuJseBwl4DTTB-pI"
-          />
-          <div className="flex flex-wrap justify-center mt-28 gap-8">
+          <article className="flex flex-wrap justify-center mt-28 gap-8">
             <div className="w-64 flex flex-col gap-6">
-              <span className="text-5xl font-bold">ShowCase</span>
+              <h1 className="text-5xl font-bold">Showcase</h1>
               <p className="text-lg">
                 Showcase is web builder that can help people to build their own
                 page for their product and do a payment with it
@@ -113,7 +109,7 @@ const Homepage = () => {
             <div>
               <img src="/dashboard.png" className="w-full h-full lg:h-96" />
             </div>
-          </div>
+          </article>
         </section>
         <section
           id="features"
@@ -134,9 +130,9 @@ const Homepage = () => {
                   >
                     <div className="flex flex-col items-center justify-center h-48 gap-3">
                       {item.icon}
-                      <span className="text-xl font-semibold capitalize">
+                      <h2 className="text-xl font-semibold capitalize">
                         {item.title}
-                      </span>
+                      </h2>
                       <p>{item.caption}</p>
                       {/* <div className="justify-center card-actions">
                         <button className="btn btn-outline btn-accent">

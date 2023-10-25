@@ -72,14 +72,12 @@ const Homepage = () => {
   const aboutItem = [
     {
       name: 'M. Abyan Zhafran Daffa',
-      nim: '19.11.3252',
-      kelas: 'IF 11',
+      position: 'Web Developer',
       img: '/gue_1.png',
     },
     {
       name: 'Ignatius Tegar Saputra',
-      nim: '19.11.3298',
-      kelas: 'IF 11',
+      position: 'UI/UX Designer',
       img: '/tegar_1.png',
     },
   ];
@@ -185,8 +183,7 @@ const Homepage = () => {
                   </div>
                   <div className="card-body">
                     <h2 className="card-title">{i.name}</h2>
-                    <span className="text-lg font-semibold">{i.nim}</span>
-                    <span className="text-lg font-semibold">{i.kelas}</span>
+                    <span className="text-lg font-semibold">{i.position}</span>
                     <div className="justify-center card-actions">
                       <button className="btn btn-outline btn-accent">
                         More info

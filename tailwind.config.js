@@ -1,16 +1,17 @@
-module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+/** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui";
+
+export default {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: false,
   theme: {
     extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('daisyui'),
-  ],
+  plugins: [daisyui],
   daisyui: {
     themes: false,
   },
-}
+};
